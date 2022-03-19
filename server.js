@@ -59,13 +59,12 @@ app.post('/register', checkNotAuthenticated, async (req, res) => {
       id: Date.now().toString(),
       name: req.body.name,
       email: req.body.email,
-      password: hashedPassword,
+      password: hashedPassword
     })
-    res.redirect("/login")
+    res.redirect('/login')
   } catch {
-    res.redirect("/register")
+    res.redirect('/register')
   }
-  console.log(users)
 })
 
 app.delete('/logout', (req, res) => {
@@ -73,10 +72,11 @@ app.delete('/logout', (req, res) => {
   res.redirect('/login')
 })
 
-function checkAuthenticated(req, ers, next) {
+function checkAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {
     return next()
   }
+
   res.redirect('/login')
 }
 
