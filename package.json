@@ -1,0 +1,27 @@
+{
+  "name": "project0-mkschweike",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ysabeaus/Project0-Mkschweike.git"
+  },
+  "author": "Madison Schweikert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ysabeaus/Project0-Mkschweike/issues"
+  },
+  "homepage": "https://github.com/ysabeaus/Project0-Mkschweike#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
